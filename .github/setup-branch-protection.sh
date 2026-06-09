@@ -2,7 +2,7 @@
 # Configura proteção da branch main no repositório sinuca-decisions.
 #
 # Uso:
-#   GITHUB_TOKEN=ghp_xxxx bash .github/setup-branch-protection.sh
+#   bash .github/setup-branch-protection.sh SEU_TOKEN
 #
 # O token precisa do escopo: repo
 
@@ -10,7 +10,11 @@ set -e
 
 REPO="Schadenlord/sinuca-decisions"
 BRANCH="main"
-TOKEN="${GITHUB_TOKEN:?Defina GITHUB_TOKEN com um Personal Access Token}"
+TOKEN="${1:-${GITHUB_TOKEN}}"
+if [[ -z "$TOKEN" ]]; then
+  echo "Uso: bash .github/setup-branch-protection.sh SEU_TOKEN"
+  exit 1
+fi
 
 echo "Configurando proteção da branch ${BRANCH} em ${REPO}..."
 
