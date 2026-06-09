@@ -1,0 +1,46 @@
+name: Proposta de torneio
+description: Proponha um formato ou regra específica para torneios
+title: "Torneio: "
+labels:
+  - "type:tournament"
+  - "status:proposed"
+body:
+  - type: textarea
+    id: format
+    attributes:
+      label: Formato proposto
+      description: Como o torneio funcionaria? (eliminatório simples, duplo, grupos + mata-mata...)
+    validations:
+      required: true
+
+  - type: input
+    id: players
+    attributes:
+      label: Número de jogadores
+      description: Quantos jogadores o formato comporta?
+      placeholder: "Ex: 8, 16, aberto"
+    validations:
+      required: false
+
+  - type: textarea
+    id: tiebreaker
+    attributes:
+      label: Critério de desempate
+      description: O que acontece em caso de empate na fase de grupos ou no ranking?
+    validations:
+      required: false
+
+  - type: textarea
+    id: prizes
+    attributes:
+      label: Premiação / incentivos
+      description: Haverá premiação? Pontos no ranking? Qual a proposta?
+    validations:
+      required: false
+
+  - type: textarea
+    id: observations
+    attributes:
+      label: Observações adicionais
+    validations:
+      required: false
