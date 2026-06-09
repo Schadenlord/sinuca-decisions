@@ -8,20 +8,21 @@ Uma RFC é uma pergunta aberta: "devemos fazer X?" Ela existe para coletar opini
 
 ## Onde vivem as RFCs
 
-As RFCs são **GitHub Discussions**, não Issues. Use o template **RFC** ao abrir uma nova discussão.
+As RFCs são **GitHub Issues**. Use os templates ao abrir uma nova issue:
 
-> **Settings → Discussions** precisa estar habilitado no repositório.
-> Categorias recomendadas: `RFC`, `Dúvidas de Regra`, `Propostas de Torneio`, `Geral`.
+- **RFC** — proposta de mudança de regra, formato ou política
+- **Dúvida de regra** — situação que gerou conflito durante o jogo
+- **Proposta de torneio** — proposta de formato ou regra para torneios
 
 Este diretório guarda o [`template.md`](template.md) como referência offline.
 
 ## Fluxo
 
 ```
-1. Abra uma Discussion com o template "RFC"
+1. Abra uma issue usando o template correspondente
 2. Discussão nos comentários
 3. Consenso / votação via reactions ou comentário de encerramento
-4. Feche a Discussion com o resultado registrado
+4. Feche a issue com o resultado registrado
 5. Se aprovada → abra PR criando o ADR em adr/
 ```
 
@@ -32,7 +33,5 @@ Este diretório guarda o [`template.md`](template.md) como referência offline.
 | `status:proposed` | Proposta aberta, aguardando discussão |
 | `status:in-discussion` | Em debate ativo |
 | `status:accepted` | Aprovada, ADR criado |
-| `status:rejected` | Rejeitada, Discussion fechada |
+| `status:rejected` | Rejeitada, issue fechada |
 | `status:superseded` | Substituída por RFC mais recente |
-
-> Labels em Discussions são opcionais e aplicadas manualmente.

@@ -5,20 +5,18 @@ Repositório de decisões oficiais do jogo de sinuca: regras, torneios, ranking,
 ## Como funciona
 
 ```
-dúvida ou proposta  →  Discussion (RFC)  →  consenso  →  PR com ADR  →  decisão registrada
+dúvida ou proposta  →  RFC (Issue)  →  discussão  →  PR com ADR  →  decisão registrada
 ```
 
-- **Discussion** — debate aberto. Use os templates de Discussion para RFC, dúvida de regra ou proposta de torneio.
-- **ADR** — decisão registrada via Pull Request. Só chega aqui depois de consenso na Discussion.
-
-Issues estão desabilitadas — todo debate acontece em **Discussions**.
+- **RFC** — debate aberto via Issue. Use os templates ao abrir uma issue.
+- **ADR** — decisão registrada via Pull Request. Só chega aqui depois de consenso na RFC.
 
 ## Estrutura
 
 | Diretório | O que contém |
 |-----------|--------------|
 | [`adr/`](adr/) | Decisões registradas (Architecture Decision Records) |
-| [`rfc/`](rfc/) | Template e guia para propostas via Discussions |
+| [`rfc/`](rfc/) | Template e guia para propostas de mudança |
 | [`docs/`](docs/) | Documentação de referência: regras, glossário, formatos |
 
 ## Categorias de decisão
@@ -33,11 +31,11 @@ Issues estão desabilitadas — todo debate acontece em **Discussions**.
 
 ## Como abrir uma RFC
 
-1. Acesse a aba **Discussions**
-2. Clique em **New discussion**
-3. Escolha o template (RFC, Dúvida de regra ou Proposta de torneio)
-4. Discuta até chegar a um consenso
-5. Feche a Discussion registrando o resultado
+1. Vá em **Issues → New issue**
+2. Escolha o template (RFC, Dúvida de regra ou Proposta de torneio)
+3. Preencha e submeta
+4. Discuta nos comentários até chegar a um consenso
+5. Feche a issue registrando o resultado no último comentário
 
 ## Como criar um ADR
 

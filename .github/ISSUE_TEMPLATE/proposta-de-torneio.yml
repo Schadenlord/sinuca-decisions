@@ -1,6 +1,9 @@
 name: Proposta de torneio
-about: Proponha um formato ou regra específica para torneios
+description: Proponha um formato ou regra específica para torneios
 title: "Torneio: "
+labels:
+  - "type:tournament"
+  - "status:proposed"
 body:
   - type: textarea
     id: format

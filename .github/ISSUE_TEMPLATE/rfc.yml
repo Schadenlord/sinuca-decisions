@@ -1,6 +1,9 @@
 name: RFC — Proposta de decisão
-about: Proponha uma mudança de regra, formato ou política para discussão
+description: Proponha uma mudança de regra, formato ou política para discussão
 title: "RFC: "
+labels:
+  - "type:rfc"
+  - "status:proposed"
 body:
   - type: textarea
     id: context
