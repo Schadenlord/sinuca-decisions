@@ -5,20 +5,20 @@ Repositório de decisões oficiais do jogo de sinuca: regras, torneios, ranking,
 ## Como funciona
 
 ```
-dúvida ou proposta  →  RFC (issue)  →  discussão  →  ADR (decisão registrada)
+dúvida ou proposta  →  Discussion (RFC)  →  consenso  →  PR com ADR  →  decisão registrada
 ```
 
-- **RFC** — "devemos mudar essa regra?" Discussão aberta via GitHub Issue.
-- **ADR** — "foi decidido assim." Registro permanente da decisão tomada.
+- **Discussion** — debate aberto. Use os templates de Discussion para RFC, dúvida de regra ou proposta de torneio.
+- **ADR** — decisão registrada via Pull Request. Só chega aqui depois de consenso na Discussion.
 
-RFC sem decisão final fica como issue aberta. Quando a decisão for tomada, fecha-se a RFC e cria-se um ADR.
+Issues estão desabilitadas — todo debate acontece em **Discussions**.
 
 ## Estrutura
 
 | Diretório | O que contém |
 |-----------|--------------|
 | [`adr/`](adr/) | Decisões registradas (Architecture Decision Records) |
-| [`rfc/`](rfc/) | Template e guia para propostas de mudança |
+| [`rfc/`](rfc/) | Template e guia para propostas via Discussions |
 | [`docs/`](docs/) | Documentação de referência: regras, glossário, formatos |
 
 ## Categorias de decisão
@@ -31,11 +31,13 @@ RFC sem decisão final fica como issue aberta. Quando a decisão for tomada, fec
 | Equipamentos | 0300–0399 | mesa, tacos, pano |
 | Conduta | 0400–0499 | discussões, atrasos, interferência |
 
-## Como criar uma RFC
+## Como abrir uma RFC
 
-1. Abra uma issue usando o template **RFC**
-2. Discuta na issue
-3. Quando houver consenso, feche a issue e crie o ADR correspondente
+1. Acesse a aba **Discussions**
+2. Clique em **New discussion**
+3. Escolha o template (RFC, Dúvida de regra ou Proposta de torneio)
+4. Discuta até chegar a um consenso
+5. Feche a Discussion registrando o resultado
 
 ## Como criar um ADR
 
@@ -43,17 +45,21 @@ RFC sem decisão final fica como issue aberta. Quando a decisão for tomada, fec
 2. Nomeie como `XXXX-slug-da-decisao.md` dentro de [`adr/`](adr/)
 3. Preencha todos os campos
 4. Atualize [`docs/mapa-de-decisoes.md`](docs/mapa-de-decisoes.md)
-5. Abra um PR
+5. Abra um PR — a CI vai validar os campos obrigatórios
 
-## Labels do GitHub
+## Labels
 
 ```
-type:rfc               type:rule-question     type:tournament
-type:ranking           type:equipment
+type:adr           type:rfc              type:rule-question
+type:tournament    type:ranking          type:equipment
+type:docs          type:config
 
-status:proposed        status:in-discussion   status:accepted
-status:rejected        status:superseded
+status:proposed    status:in-discussion  status:accepted
+status:rejected    status:superseded
 
-area:rules             area:scoring           area:ranking
-area:tournament        area:equipment         area:conduct
+area:rules         area:scoring          area:ranking
+area:tournament    area:equipment        area:conduct
 ```
+
+Labels são sincronizadas automaticamente via [`.github/labels.yml`](.github/labels.yml).
+PRs recebem labels automaticamente com base nos arquivos alterados.

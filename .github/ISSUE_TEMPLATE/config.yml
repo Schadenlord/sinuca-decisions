@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: RFC — Proposta de decisão
+    url: https://github.com/Schadenlord/sinuca-decisions/discussions/new/choose
+    about: Proponha uma mudança de regra, formato ou política
+  - name: Dúvida de regra
+    url: https://github.com/Schadenlord/sinuca-decisions/discussions/new/choose
+    about: Situação que gerou dúvida durante o jogo
+  - name: Proposta de torneio
+    url: https://github.com/Schadenlord/sinuca-decisions/discussions/new/choose
+    about: Proponha um formato ou regra para torneios
