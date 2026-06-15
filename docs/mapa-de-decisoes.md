@@ -6,7 +6,7 @@
 
 | ADR | Título | Status |
 |-----|--------|--------|
-| — | — | — |
+| [ADR-0001](../adr/0001-perfeitinhas.md) | Definição de Perfeitinha | — |
 
 ## Torneios (0100–0199)
 
