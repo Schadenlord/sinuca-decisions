@@ -1,6 +1,4 @@
-# RFC: Título da proposta
-
-<!-- Use este template ao abrir uma issue de RFC no GitHub. -->
+# Proposta: Título da proposta
 
 ## Contexto
 

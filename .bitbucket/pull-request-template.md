@@ -6,20 +6,20 @@
 
 - [ ] Novo ADR
 - [ ] Atualização de ADR existente
-- [ ] Nova RFC / template
+- [ ] Nova proposta / template
 - [ ] Documentação (`docs/`)
 - [ ] Configuração do repositório
 
 ## Checklist
 
-- [ ] O arquivo segue o template (`adr/template.md` ou `rfc/template.md`)
+- [ ] O arquivo segue o template (`adr/template.md` ou `proposta/template.md`)
 - [ ] O status do ADR está correto (`Proposed` / `Accepted` / `Rejected` / `Superseded`)
 - [ ] `docs/mapa-de-decisoes.md` foi atualizado (se aplicável)
-- [ ] Links para RFCs relacionadas estão corretos
+- [ ] Links para propostas relacionadas estão corretos
 
-## RFCs relacionadas
+## Propostas relacionadas
 
-<!-- - #número -->
+<!-- - proposta/nome-do-arquivo.md ou PR #N -->
 
 ## Observações
 

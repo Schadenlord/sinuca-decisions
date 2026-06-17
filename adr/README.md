@@ -4,14 +4,14 @@ Este diretório contém as decisões oficiais do jogo de sinuca.
 
 ## O que é um ADR
 
-Um ADR registra **uma decisão já tomada** — não é o lugar para propor ou debater. Para propor uma mudança, abra uma RFC (issue). Quando a decisão for tomada, ela vira um ADR aqui.
+Um ADR registra **uma decisão já tomada** — não é o lugar para propor ou debater. Para propor uma mudança, crie uma proposta em `proposta/`. Quando a decisão for tomada, ela vira um ADR aqui.
 
-> RFC: "vamos discutir essa regra?"
+> Proposta: "vamos discutir essa regra?"
 > ADR: "foi decidido assim — acabou o choro, passa o giz no taco e joga."
 
 ## Quando criar
 
-- A discussão na RFC chegou a um consenso
+- A discussão na proposta chegou a um consenso
 - Alguém com autoridade tomou a decisão
 - Você quer registrar uma regra que já estava em vigor mas nunca foi documentada
 

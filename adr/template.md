@@ -43,10 +43,10 @@ Quais outras opções foram consideradas e por que foram rejeitadas?
 2. Opção B — rejeitada porque...
 -->
 
-## Related RFCs
+## Propostas relacionadas
 
 <!--
-- #número-da-issue
+- proposta/nome-do-arquivo.md ou PR #N
 -->
 
 ## Related Rules

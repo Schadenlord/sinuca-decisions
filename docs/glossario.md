@@ -27,4 +27,4 @@ Termos usados nas decisões e regras, com definições consensuais.
 | Termo | Definição |
 |-------|-----------|
 | ADR | Architecture Decision Record — registro de uma decisão tomada |
-| RFC | Request for Comments — proposta aberta para discussão |
+| Proposta | Rascunho de mudança ou decisão em `proposta/`, discutido antes de virar um ADR |

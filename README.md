@@ -5,18 +5,18 @@ Repositório de decisões oficiais do jogo de sinuca: regras, torneios, ranking,
 ## Como funciona
 
 ```
-dúvida ou proposta  →  RFC (Issue)  →  discussão  →  PR com ADR  →  decisão registrada
+dúvida ou proposta  →  rascunho em proposta/  →  PR com ADR  →  decisão registrada
 ```
 
-- **RFC** — debate aberto via Issue. Use os templates ao abrir uma issue.
-- **ADR** — decisão registrada via Pull Request. Só chega aqui depois de consenso na RFC.
+- **Proposta** — rascunho de mudança criado em `proposta/`. Serve para debater antes de abrir o PR.
+- **ADR** — decisão registrada via Pull Request. A discussão final acontece nos comentários do PR.
 
 ## Estrutura
 
 | Diretório | O que contém |
 |-----------|--------------|
 | [`adr/`](adr/) | Decisões registradas (Architecture Decision Records) |
-| [`rfc/`](rfc/) | Template e guia para propostas de mudança |
+| [`proposta/`](proposta/) | Rascunhos de mudança para debate antes do PR |
 | [`docs/`](docs/) | Documentação de referência: regras, glossário, formatos |
 
 ## Categorias de decisão
@@ -29,13 +29,13 @@ dúvida ou proposta  →  RFC (Issue)  →  discussão  →  PR com ADR  →  de
 | Equipamentos | 0300–0399 | mesa, tacos, pano |
 | Conduta | 0400–0499 | discussões, atrasos, interferência |
 
-## Como abrir uma RFC
+## Como criar uma proposta
 
-1. Vá em **Issues → New issue**
-2. Escolha o template (RFC, Dúvida de regra ou Proposta de torneio)
-3. Preencha e submeta
-4. Discuta nos comentários até chegar a um consenso
-5. Feche a issue registrando o resultado no último comentário
+1. Copie [`proposta/template.md`](proposta/template.md)
+2. Nomeie como `slug-da-proposta.md` dentro de [`proposta/`](proposta/)
+3. Preencha e compartilhe com o time
+4. Discuta até chegar a um consenso
+5. Abra um PR com o ADR correspondente em [`adr/`](adr/)
 
 ## Como criar um ADR
 
@@ -59,5 +59,4 @@ area:rules         area:scoring          area:ranking
 area:tournament    area:equipment        area:conduct
 ```
 
-Labels são sincronizadas automaticamente via [`.github/labels.yml`](.github/labels.yml).
-PRs recebem labels automaticamente com base nos arquivos alterados.
+Labels são gerenciadas manualmente nas configurações do repositório no Bitbucket.
