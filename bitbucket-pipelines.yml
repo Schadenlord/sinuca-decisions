@@ -1,0 +1,43 @@
+image: atlassian/default-image:4
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: Validate ADR
+          script:
+            - git fetch origin ${BITBUCKET_PR_DESTINATION_BRANCH}
+            - |
+              CHANGED=$(git diff --name-only origin/${BITBUCKET_PR_DESTINATION_BRANCH}...HEAD | grep '^adr/[0-9]' || true)
+              if [ -z "$CHANGED" ]; then
+                echo "Nenhum ADR alterado."
+                exit 0
+              fi
+              FAILED=0
+              for file in $CHANGED; do
+                [ -f "$file" ] || continue
+                echo "Verificando $file..."
+                for section in "## Status" "## Date" "## Context" "## Decision"; do
+                  if ! grep -q "^${section}" "$file"; then
+                    echo "ERRO em $file: secao ausente: ${section}"
+                    FAILED=1
+                  fi
+                done
+              done
+              exit $FAILED
+      - step:
+          name: Check mapa de decisoes
+          script:
+            - git fetch origin ${BITBUCKET_PR_DESTINATION_BRANCH}
+            - |
+              CHANGED=$(git diff --name-only origin/${BITBUCKET_PR_DESTINATION_BRANCH}...HEAD)
+              ADR_CHANGED=$(echo "$CHANGED" | grep '^adr/[0-9]' || true)
+              MAPA_CHANGED=$(echo "$CHANGED" | grep '^docs/mapa-de-decisoes.md' || true)
+              if [ -n "$ADR_CHANGED" ] && [ -z "$MAPA_CHANGED" ]; then
+                echo "AVISO: docs/mapa-de-decisoes.md nao foi atualizado."
+                echo "ADR(s) alterado(s):"
+                echo "$ADR_CHANGED"
+                echo "Lembre de adicionar a entrada correspondente em docs/mapa-de-decisoes.md."
+              else
+                echo "mapa-de-decisoes.md esta atualizado."
+              fi
