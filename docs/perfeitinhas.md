@@ -7,15 +7,15 @@ Registro histórico de partidas ganhas sem que o adversário tenha encaçapado n
 ## Como ler a tabela
 
 - O placar reflete o total de perfeitinhas entre os dois lados (ex: `2 x 1` significa que o time da esquerda fez 2 perfeitinhas contra o da direita, e o da direita fez 1 contra o da esquerda).
-- **Formato 1x1**: um nome em cada coluna.
-- **Formato Duplas**: dois nomes em cada coluna (ex: `Bruno / Weiss`).
+- **Formato Singles**: um nome em cada coluna.
+- **Formato Duplas**: dois nomes em cada coluna (ex: `Schaden / Weiss`).
 
 ## Registro
 
 | Time 1 | Placar | Time 2 | Formato |
 |--------|--------|--------|---------|
-| Bruno / Weiss | 1 x 0 | Rodrigo / Mineiro | Duplas |
-| Bruno / Rafa | 1 x 0 | Leticia / Leco | Duplas |
-| Caio / Paulo | 1 x 0 | Bruno / Lara | Duplas |
-| Leco | 1 x 0 | Rafa | 1x1 |
-| Bruno / Caio | 1 x 0 | Leticia / Felipe | Duplas |
+| Schaden / Weiss | 1 x 0 | Rodrigo Fin. / Mineiro Remo | Duplas |
+| Schaden / Rafa Fin. | 1 x 0 | Leticia 2 / Leco | Duplas |
+| Caio / Paulinho | 1 x 0 | Schaden / LL | Duplas |
+| Leco | 1 x 0 | Rafa Fin. | Singles |
+| Schaden / Caio | 1 x 0 | Leticia 2 / Linck | Duplas |

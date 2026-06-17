@@ -16,7 +16,7 @@ A perfeitinha é contabilizada **por partida individual** (game). Em formatos "m
 
 ### Formatos de jogo
 
-- **1x1**: a perfeitinha é atribuída ao jogador vencedor.
+- **Singles**: a perfeitinha é atribuída ao jogador vencedor.
 - **Duplas**: a perfeitinha é atribuída à dupla vencedora (ambos os jogadores).
 
 ## Consequences
@@ -26,7 +26,7 @@ A perfeitinha é contabilizada **por partida individual** (game). Em formatos "m
 ## Alternatives Considered
 
 1. **Perfeitinha somente por bolas** (excluindo o caso da bola 8 direta) — rejeitada porque o placar de bolas do adversário também fica zerado, mantendo o espírito do conceito.
-2. **Perfeitinha somente no formato 1x1** — rejeitada porque duplas já são registradas na prática e o critério se aplica igualmente.
+2. **Perfeitinha somente no formato Singles** — rejeitada porque duplas já são registradas na prática e o critério se aplica igualmente.
 
 ## Related Rules
 
