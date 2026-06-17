@@ -1,4 +1,4 @@
-# sinuca-decisions
+# adr_pool
 
 Repositório de decisões oficiais do jogo de sinuca: regras, torneios, ranking, equipamentos e conduta.
 
